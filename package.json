@@ -1,7 +1,7 @@
 {
-  "name": "currency-exchange",
-  "version": "1.0.0",
-  "description": "Get currency exchange rates",
+  "name": "live-currency-exchange",
+  "version": "1.0.1",
+  "description": "Get currency exchange rates from the European Central Bank",
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"
@@ -18,7 +18,8 @@
     "currency",
     "exchange",
     "rate",
-    "api"
+    "api",
+    "bank"
   ],
   "author": "vivekimsit@gmail.com",
   "license": "MIT",
