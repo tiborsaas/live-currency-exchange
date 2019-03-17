@@ -1,11 +1,11 @@
-# exchange-rate [![Build Status](https://travis-ci.org/vivekimsit/exchange-rate.svg?branch=master)](https://travis-ci.org/vivekimsit/exchange-rate)
-> Get currency exchange rates
+# Live currency exchange
 
+> Get currency exchange rates from the European Central Bank.
 
 ## Install
 
 ```
-$ npm install exchange-rate
+$ npm i live-currency-exchange
 ```
 
 ## Usage
@@ -13,5 +13,11 @@ $ npm install exchange-rate
 ```js
 const createExchange = require('exchange-rate');
 const exchange = createExchange();
-const {source, target, rate} = await exchange.convert({source: 'EUR', target: 'GBP'});
+const {source, target, rate} = await exchange.convert({source: 'GBP', target: 'EUR'});
+```
+
+### Response
+
+```json
+{ source: 'GBP', target: 'EUR', rate: 1.1708 }
 ```
